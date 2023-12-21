@@ -1,0 +1,2 @@
+The Savitzky-Golay filtering is conducted in Google Earth Engine platform, the link is:
+https://code.earthengine.google.com/f1ea7b269c50be98a2d0214862122fc2
