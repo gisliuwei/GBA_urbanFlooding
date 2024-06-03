@@ -5,7 +5,7 @@ Elevation = imread('E:\Elevation.tif');
 [m1,n1] = size(Elevation);  
 ori_mod = load('E:\mat655.mat'); %连续值的MAC
 sum = nan(1000,7);
-for i = 1:1000
+for i = 1:1000 
     OriData = datasetUnit(2020);
     posiData = OriData(OriData(:,end)==1,3:end);
     negaData = OriData(OriData(:,end)==-1,3:end); 

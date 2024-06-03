@@ -13,7 +13,7 @@ data = pd.read_csv('C:\\Users\\A\\Desktop\\内涝易感时序_返修\\data\\out.
 data_sample = data.sample(n=3000)
 # 分离特征和目标
 X = data_sample.iloc[:, 0:10]  # 训练样本
-x = data.iloc[:, 0:10]         # 全样本
+x = data.iloc[:, 0:10]         # 全样本 
 y = data_sample.iloc[:, 10]
 print("1")
 # 将数据分为训练集和测试集

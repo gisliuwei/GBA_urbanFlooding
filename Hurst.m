@@ -12,7 +12,7 @@ hsum=zeros(size(aa,1),size(aa,2))-99;
 
 for kk=1:size(risksum,1)
     ceil(kk*100/size(risksum,1))
-    risk=risksum(kk,:);   % 1*15
+    risk=risksum(kk,:);   % 1*15 
     risk(risk<0)=[];
     if sum(isnan(risk)) > 0 
         continue

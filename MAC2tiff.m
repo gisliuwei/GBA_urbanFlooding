@@ -14,7 +14,7 @@ for year = 2006:2020
         [Y_train, votes_train, prediction_train] = classRF_predict(OriData(:,3:end),ori_mod.mod);
         risk1 = votes_train(:,2)/500;
         C = [OriData(:,1:2),risk1];
-        for idx = 1:length(C)
+        for idx = 1:length(C) 
             risk(C(idx,1),C(idx,2))=risk1(idx);       
         end
         fileName1 = ['E:\14.DWQ_island\1.data\test\MAC2tif\risk',num2str(year),'.tif'];     

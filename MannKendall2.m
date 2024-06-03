@@ -5,7 +5,7 @@ meta = imread('E:\risk_Hurst.tif');
 rowCol = zeros(m1*n1,2);
 for i = 1:m1
     rowCol((i-1)*n1+1:i*n1,1)=i;
-    rowCol((i-1)*n1+1:i*n1,2)=1:1:n1;
+    rowCol((i-1)*n1+1:i*n1,2)=1:1:n1; 
 end
 
 beta = imread('E:\beta.tif');        beta= double(reshape(beta',m1*n1,1));

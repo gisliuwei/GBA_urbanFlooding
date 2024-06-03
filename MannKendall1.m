@@ -9,7 +9,7 @@ for year = 2011:2020
     data= double(reshape(data',m1*n1,1));
     sumData = [sumData,data];
 end
-
+ 
 rowCol = zeros(m1*n1,2);
 for i = 1:m1
     rowCol((i-1)*n1+1:i*n1,1)=i;
